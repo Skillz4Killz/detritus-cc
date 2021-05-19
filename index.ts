@@ -39,10 +39,10 @@ function logMemory() {
   const usage = process.memoryUsage();
   const bytes = 1000000;
   console.log(
-    `[${counter} v11] Memory Usage RSS: ${usage.rss /
+    `[${counter} detritus] Memory Usage RSS: ${usage.rss /
       bytes}MB Heap Used: ${usage.heapUsed /
       bytes}MB Heap Total: ${usage.heapTotal /
-      bytes}MB | Guilds ${commandClient.client.}`,
+      bytes}MB`,
   );
   counter++;
 }
@@ -94,3 +94,4 @@ function logMemory() {
   // client has received the READY payload, do stuff now
   console.log(`Client has loaded with a shard count of ${client.shardCount}`);
 })();
+
